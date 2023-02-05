@@ -1,0 +1,26 @@
+mat-table {
+  width: 100%;
+}
+
+mat-row.example-detail-row {
+  /* flex-basis: 0; */
+  min-height: initial;
+}
+
+.example-element-row:not(.example-expanded-row):hover {
+  background: whitesmoke;
+}
+
+.example-element-row:not(.example-expanded-row):active {
+  background: #efefef;
+}
+
+.example-element-row, /* override mat-row styling */
+.example-element-row mat-cell {
+  border-bottom-width: 0;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  display: flex;
+}

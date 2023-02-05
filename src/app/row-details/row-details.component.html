@@ -1,0 +1,14 @@
+<div class="row-details" *ngIf="periodicElement" @detailExpand>
+  <div class="example-element-diagram">
+    <div class="example-element-position">{{periodicElement?.position}}</div>
+    <div class="example-element-symbol">{{periodicElement?.symbol}}</div>
+    <div class="example-element-name">{{periodicElement?.name}}</div>
+    <div class="example-element-weight">{{periodicElement?.weight}}</div>
+  </div>
+  <div class="example-element-description">
+    {{periodicElement.description}}
+    <span class="example-element-description-attribution">
+      -- Wikipedia
+    </span>
+  </div>
+</div>
